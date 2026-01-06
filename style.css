@@ -42,6 +42,12 @@ nav div ul {
   gap: 32px;
   font-size: 20px;
   color: #474747;
+  cursor: pointer;
+}
+
+nav div ul li:hover {
+  color: #FD6E0A;
+  transition: 300ms;
 }
 
 .btn {
@@ -49,15 +55,30 @@ nav div ul {
   color: white;
   font-size: 20px;
   font-weight: 600;
-  border: none;
+  border: 1px solid #FD6E0A;
   border-radius: 5px;
   padding: 18px 36px;
+  transition: 300ms;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 18px 36px;
+  cursor: pointer;
+  transform: scale(.95);
+  transition: 300ms;
 }
 
 .btn1 {
   background-color: transparent;
   color: #FD6E0A;
   border: solid 1px #FD6E0A;
+  transition: 300ms;
 }
 
 /* hero continer */
@@ -162,6 +183,13 @@ header div div img {
   color: #474747;
 }
 
+.title-2 a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #474747;
+  text-decoration: none;
+}
+
 /* service section */
 .service-continer {
   width: 80%;
@@ -210,18 +238,17 @@ header div div img {
   justify-items: center;
   margin: auto;
   margin-bottom: 130px;
-
 }
 
 .Resume-section div {
   display: flex;
   gap: 50px;
   padding-bottom: 30px;
-  margin-top: 50px;
 }
 
 .Resume-section div div {
   display: block;
+  gap: 0px;
 }
 
 .Resume-section div div h3 {
@@ -229,7 +256,7 @@ header div div img {
   font-weight: bold;
   color: #474747;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 90px;
 }
 
 .Resume-section div div div {
@@ -259,4 +286,67 @@ header div div img {
 .box {
   border-top: 1px solid #D1D1D1;
   border-bottom: 1px solid #D1D1D1;
+}
+
+/* footer section */
+.footer-section {
+  background-color: #FFF8F3;
+}
+
+.footer-continer {
+  width: 80%;
+  max-width: 1140px;
+  box-sizing: border-box;
+  display: flex;
+  margin: auto;
+  padding: 130px 0px;
+  gap: 80px;
+}
+
+.social-icon img {
+  padding-right: 24px;
+}
+
+.footer-text {
+  width: 50%;
+}
+
+.footer-form {
+  width: 50%;
+}
+
+.text-footer {
+  width: 100%;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  background-color: white;
+  padding: 18px 30px;
+  margin: 10px 0px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+textarea {
+  background-color: white;
+  padding: 18px 30px;
+  margin: 10px 0px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.input-btn {
+  width: 30%;
 }
